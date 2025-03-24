@@ -1,0 +1,42 @@
+* {box-sizing: border-box;}
+html {font-size: calc(13px + 0.25vw); text-align: center;}
+html, body {margin: 0; padding: 0; font-family: Verdana, Geneva, sans-serif; height: 100%; 
+display: flex; flex-direction: column; background: #f4ecd4; position: relative;}
+
+a {text-decoration: none; color: inherit; transition: all 0.3s; font-weight: bold;
+font-family: inherit;}
+img {max-width: 100%; height: auto; background-size: cover;
+background: inherit no-repeat center;}
+h1, h2, h3, h4, h5, h6, header, footer, #ur_list {font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;}
+
+header, footer {text-align: center; padding: 2rem; color: white;
+box-shadow: 2px 0px 4px rgba(0, 0, 0, 0.5); background: #A20205;}
+header {font-weight: bold; font-size: 2.7rem;}
+footer p {width: 100%; max-width: 20rem; margin: 0 auto;}
+main {display: block; margin: 0 auto; width: 100%; max-width: 70rem;
+flex-grow: 1; padding: 1rem;}
+.bord {max-width: 100%; width: max(40vw, 40rem); margin: 0 auto;}
+.text {text-align: left;}
+
+#list {font-weight: bold; margin: 2rem auto; font-size: min(5vw, 2rem);}
+#list a {margin: 3px 0; display: block;}
+#list a, #list dt {display: flex; align-items: baseLine;}
+#list dt, #list dt::after {flex-grow: 1;}
+#list dt::after {content: ""; margin-inline: 0.4em; border-bottom: 0.12em dashed black;}
+#list dd {margin: 0;}
+#list a:hover * {color: #A20205;}
+#list a:hover dt::after {border-color: #A20205;}
+
+summary {font-weight: bold; font-size: 1.3rem;}
+details p {text-align: left; margin: 0 0 0 1rem;}
+details img {width: 100%;}
+details a {width: 30vw; flex-shrink: 0;}
+details div {display: flex; margin: 1rem 0;}
+
+#appear {position: absolute; z-index: 1000; background: #f5f5f5; 
+border-radius: 3px; border: 1px solid #111; font-size: 0.7rem; 
+padding: 5px; box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+font-family: Verdana; white-space: pre-wrap;}
+
+#logo {width: 35rem;}
+#modrons {margin-bottom: -1.25rem; width: calc(60rem + 12vw);}
